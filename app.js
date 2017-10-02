@@ -29,6 +29,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 //body parser middle ware
 app.use(bodyParser.json());
 
+//Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport')(passport);
+
 app.use('/users', users);
 
 //index route
@@ -40,4 +46,3 @@ app.get('/', (req, res) => {
 app.listen(port, function() {
     console.log('server started on ' + port);
 });
-

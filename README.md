@@ -1,4 +1,4 @@
-# Authentican App
+# Authentication App
 
 #### This app was created following tutorial series https://www.youtube.com/watch?v=uONz0lEWft0. It's made using MEAN stack front to back.
 
